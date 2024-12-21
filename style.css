@@ -1,120 +1,142 @@
 body {
-    font-family: 'Product Sans', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     margin: 0;
-    background-color: #f8f8f8;
-    color: #24292e;
+    background-color: #fafafa; /* Very light gray */
+    color: #1d1d1f; /* Almost black */
 }
 
 .container {
-    max-width: 1012px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .header {
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* More space */
 }
 
 .navigation {
     display: flex;
-    border-bottom: 1px solid #67748e;
+    border-bottom: 1px solid #d2d2d7; /* Light gray border */
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%
 }
 
 .nav-item {
-    padding: 16px 8px;
-    margin-right: 8px;
+    padding: 16px 24px; /* More padding */
+    margin-right: 16px; /* More space between items */
     text-decoration: none;
     color: #586069;
     border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
 }
 
-.nav-item.active {
-    border-bottom: 2px solid #f9826c;
-    font-weight: 600;
-    color: #24292e;
+.nav-item.active,
+.nav-item:hover {
+    border-bottom: 2px solid #0070c9; /* Apple blue */
+    color: #1d1d1f;
 }
 
 .badge {
     background-color: #e1e4e8;
-    padding: 2px 5px;
+    padding: 3px 8px; /* Adjusted padding */
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500; /* Slightly less bold */
 }
 
 .main-content {
     display: flex;
+    justify-content: space-between; /* Space between sidebar and content */
 }
 
 .sidebar {
-    width: 25%;
-    margin-right: 20px;
+    width: 30%; /* Adjust width */
+    margin-right: 40px; /* More space */
+    text-align: center;
 }
 
 .profile-picture img {
-    width: 100%;
+    width: 80%; /* Adjust size */
     border-radius: 50%;
+    margin-bottom: 20px; /* More space */
 }
 
 .name {
-    font-size: 20px;
+    font-size: 24px; /* Larger font size */
     font-weight: 600;
-    margin: 10px 0 5px 0;
+    margin: 0 0 5px 0;
 }
 
 .username {
     color: #586069;
     font-size: 18px;
+    margin-bottom: 20px;
 }
-.pronouns{
-  font-size: 14px;
+
+.pronouns {
+    font-size: 14px;
 }
 
 .bio {
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* More space */
+    text-align: center;
 }
 
 .edit-profile {
-    width: 100%;
-    padding: 5px 10px;
-    background-color: #fafbfc;
-    border: 1px solid #67748e;
-    border-radius: 6px;
+    width: 80%;
+    padding: 8px 16px; /* More padding */
+    background-color: transparent;
+    border: 1px solid #0070c9; /* Apple blue border */
+    color: #0070c9;
+    border-radius: 8px; /* Rounded corners */
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
+    margin: 0 auto;
+}
+
+.edit-profile:hover {
+    background-color: #0070c9;
+    color: #fafafa;
 }
 
 .stats {
     display: flex;
-    margin: 15px 0;
+    justify-content: center;
+    margin: 20px 0;
 }
 
 .stat-item {
     text-decoration: none;
     color: #586069;
-    margin-right: 10px;
+    margin: 0 10px; /* More space */
 }
 
 .stat-item span {
     font-weight: 600;
-    color: #24292e;
+    color: #1d1d1f;
 }
-.separator{
+
+.separator {
     color: #586069;
 }
 
 .info-list {
     list-style: none;
     padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
 }
 
 .info-list li {
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* More space */
 }
 
-.info-list li a{
+.info-list li a {
     text-decoration: none;
-    color: #0366d6;
+    color: #0070c9; /* Apple blue */
 }
 
 .icon {
@@ -122,38 +144,41 @@ body {
     width: 16px;
     text-align: center;
     margin-right: 5px;
+    color: #586069;
 }
 
 .highlights {
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 .highlights h3 {
-    font-size: 16px;
+    font-size: 18px; /* Larger font size */
     margin-bottom: 10px;
 }
 
 .highlights p span {
-    background-color: #f0f6fc;
-    color: #0366d6;
-    padding: 2px 5px;
+    background-color: #e1e4e8;
+    color: #1d1d1f;
+    padding: 3px 8px;
     border-radius: 20px;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .content {
-    width: 75%;
+    width: 70%; /* Adjust width */
 }
 
 .readme {
-    border: 1px solid #67748e;
+    border: 1px solid #d2d2d7; /* Light gray border */
     padding: 20px;
-    border-radius: 6px;
-    background-color: #fafbfc;
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fafafa;
     margin-bottom: 20px;
 }
-.readme ul{
+
+.readme ul {
     margin: 0;
     padding-left: 20px;
 }
@@ -167,18 +192,19 @@ body {
     font-weight: 400;
     color: #586069;
 }
-.readme a{
+
+.readme a {
     text-decoration: none;
-    color: #0366d6;
+    color: #0070c9; /* Apple blue */
 }
 
 .featured-projects {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .featured-projects h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px; /* Larger font size */
+    margin-bottom: 15px; /* More space */
 }
 
 .featured-projects ol {
@@ -187,10 +213,10 @@ body {
 }
 
 .featured-projects li {
-    border: 1px solid #67748e;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    border: 1px solid #d2d2d7;
+    padding: 15px;
+    margin-bottom: 15px; /* More space */
+    border-radius: 10px; /* Rounded corners */
 }
 
 .featured-projects h4 {
@@ -198,15 +224,15 @@ body {
 }
 
 .pinned-repos h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 18px; /* Larger font size */
+    margin-bottom: 15px; /* More space */
 }
 
 .customize-pins {
     float: right;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
-    color: #0366d6;
+    color: #0070c9;
 }
 
 .repo-grid {
@@ -216,26 +242,34 @@ body {
 }
 
 .repo-card {
-    border: 1px solid #67748e;
+    border: 1px solid #d2d2d7;
     padding: 15px;
-    border-radius: 6px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* More prominent shadow on hover */
 }
 
 .repo-title {
     margin: 0 0 5px 0;
+    font-size: 16px; /* Adjust font size */
+    font-weight: 600;
 }
 
 .repo-title a {
     text-decoration: none;
-    color: #0366d6;
+    color: #0070c9; /* Apple blue */
 }
 
 .repo-visibility {
     font-size: 12px;
     color: #586069;
-    border: 1px solid #67748e;
+    border: 1px solid #d2d2d7;
     border-radius: 20px;
-    padding: 2px 5px;
+    padding: 3px 8px;
 }
 
 .repo-description {
